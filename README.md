@@ -1,0 +1,1 @@
+Learning how to use CMake by following this playlist: https://www.youtube.com/playlist?list=PLalVdRk2RC6o5GHu618ARWh0VO0bFlif4
