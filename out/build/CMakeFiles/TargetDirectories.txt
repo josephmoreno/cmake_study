@@ -1,3 +1,0 @@
-C:/Users/monot/Desktop/Work/Code/cmake_study/out/build/CMakeFiles/cmake_study.dir
-C:/Users/monot/Desktop/Work/Code/cmake_study/out/build/CMakeFiles/edit_cache.dir
-C:/Users/monot/Desktop/Work/Code/cmake_study/out/build/CMakeFiles/rebuild_cache.dir

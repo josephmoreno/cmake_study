@@ -1,0 +1,7 @@
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/cmake_study.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/edit_cache.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/rebuild_cache.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/list_install_components.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/install.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/install/local.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test0/build/CMakeFiles/install/strip.dir

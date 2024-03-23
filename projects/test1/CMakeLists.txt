@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.27.2)
+project(test1)
+add_executable(test1 main.cpp)
+# target_link_directories(test1 PRIVATE ${CMAKE_SOURCE_DIR}/../lib_test0/build)
+target_link_libraries(test1 lib_test0)

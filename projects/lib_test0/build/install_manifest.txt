@@ -1,0 +1,2 @@
+C:/Program Files (x86)/lib_test0/lib/liblib_test0.a
+C:/Program Files/mingw64/include/adder.hpp

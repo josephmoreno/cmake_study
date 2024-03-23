@@ -1,0 +1,3 @@
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test1/build/CMakeFiles/test1.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test1/build/CMakeFiles/edit_cache.dir
+C:/Users/monot/Desktop/Work/Code/cmake_study/projects/test1/build/CMakeFiles/rebuild_cache.dir
