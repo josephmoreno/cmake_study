@@ -12,3 +12,6 @@ Episode 2 Notes:
 - When built lib is not accessible through path, directory needs to be specified in CMakeLists.txt: target_link_directories(test1 PRIVATE ${CMAKE_SOURCE_DIR}/path/to/lib)
 - When only changing contents of files and not adding files to the build, don't typically need to re-run cmake command.
 - "ARCHIVE DESTINATION" instead of "LIBRARY DESTINATION" when installing for ".a" library.
+
+Episode 3 Notes:
+- Don't want to push build files nor certain C++ files (see gitignore).

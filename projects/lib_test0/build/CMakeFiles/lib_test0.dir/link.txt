@@ -1,2 +1,0 @@
-C:\PROGRA~1\mingw64\bin\ar.exe qc liblib_test0.a CMakeFiles/lib_test0.dir/adder.cpp.obj
-C:\PROGRA~1\mingw64\bin\ranlib.exe liblib_test0.a
