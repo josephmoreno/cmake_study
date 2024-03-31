@@ -15,3 +15,7 @@ Episode 2 Notes:
 
 Episode 3 Notes:
 - Don't want to push build files nor certain C++ files (see gitignore).
+- git submodule add https://github.com/url/to/submodule.git path/to/dir -- example: git submodule add https://github.com/glfw/glfw.git external/glfw
+- add_subdirectory(dir) -- dir must have CMakeLists.txt.
+- target_link_directories() -- this directive paths starting from its build folder.
+- See test0/CMakeLists.txt for downloading all submodules and checking them, for situations like sharing the repo with others so they don't have any missing submodules.
