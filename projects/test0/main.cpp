@@ -1,9 +1,12 @@
 #include <iostream>
 #include <adder.hpp>
 #include <GLFW/glfw3.h>
+#include <test0_config.h>
 
-int main() {
+int main(int argc, char** argv) {
     std::cout << mearlymath::add(5, 23) << std::endl;
+
+    std::cout << argv[0] << " Version " << TEST0_VERSION_MAJOR << "." << TEST0_VERSION_MINOR << std::endl; 
 
     GLFWwindow* window;
 
@@ -12,7 +15,7 @@ int main() {
         exit( EXIT_FAILURE );
     }
 
-    window = glfwCreateWindow( 300, 300, "Gears", NULL, NULL );
+    window = glfwCreateWindow( 300, 300, "whatever", NULL, NULL );
     if (!window)
     {
         fprintf( stderr, "Failed to open GLFW window\n" );

@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.27.2)
 
-project(test0)
+project(test0 VERSION 1.0)
+configure_file(test0_config.h.in test0_config.h)
 add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
 # Download all the submodules
 find_package(Git QUIET)

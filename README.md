@@ -19,3 +19,6 @@ Episode 3 Notes:
 - add_subdirectory(dir) -- dir must have CMakeLists.txt.
 - target_link_directories() -- this directive paths starting from its build folder.
 - See test0/CMakeLists.txt for downloading all submodules and checking them, for situations like sharing the repo with others so they don't have any missing submodules.
+
+Episode 4 Notes:
+- The define directive in the h.in file (test0_config.h.in for this project) must reflect the project name in CMakeLists.txt, so @test0_VERSION_MAJOR@ for this project.
