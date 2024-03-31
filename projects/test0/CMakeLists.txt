@@ -1,10 +1,25 @@
 cmake_minimum_required(VERSION 3.27.2)
 
 project(test0 VERSION 1.0)
+
+option(USE_ADDER "Library for adding two ints or floats." ON)
+if(USE_ADDER)
+    add_subdirectory(adder)
+    list(APPEND LIST_LIB_DIRS "${PROJECT_SOURCE_DIR}/adder")
+    list(APPEND LIST_INCL_DIRS "${PROJECT_SOURCE_DIR}/adder")
+    list(APPEND LIST_LINKS adder)
+
+    # target_include_directories(${PROJECT_NAME} PUBLIC adder)
+    # target_link_directories(${PROJECT_NAME} PRIVATE adder)
+endif()
+
 configure_file(test0_config.h.in test0_config.h)
 add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
+
+include(CmakePrintHelpers)
+cmake_print_variables(PROJECT_BINARY_DIR PROJECT_SOURCE_DIR USE_ADDER)
 
 # Download all the submodules
 find_package(Git QUIET)
@@ -30,16 +45,15 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/external/glfw/CMakeLists.txt")
 endif()
 
 add_subdirectory(external/glfw)
-add_subdirectory(adder)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC external/glfw/include
-    PUBLIC adder
+    ${LIST_INCL_DIRS}
 )
 
 target_link_directories(${PROJECT_NAME}
     PRIVATE external/glfw/src
-    PRIVATE adder
+    ${LIST_LIB_DIRS}
 )
 
-target_link_libraries(${PROJECT_NAME} glfw adder)
+target_link_libraries(${PROJECT_NAME} glfw ${LIST_LINKS})

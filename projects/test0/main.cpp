@@ -1,10 +1,19 @@
 #include <iostream>
-#include <adder.hpp>
+// #include <adder.hpp>
 #include <GLFW/glfw3.h>
 #include <test0_config.h>
 
+#ifdef USE_ADDER
+    #include <adder.hpp>
+#endif
+
 int main(int argc, char** argv) {
+
+#ifdef USE_ADDER
     std::cout << mearlymath::add(5, 23) << std::endl;
+#else
+    std::cout << "HALLO" << std::endl;
+#endif
 
     std::cout << argv[0] << " Version " << TEST0_VERSION_MAJOR << "." << TEST0_VERSION_MINOR << std::endl; 
 

@@ -22,3 +22,6 @@ Episode 3 Notes:
 
 Episode 4 Notes:
 - The define directive in the h.in file (test0_config.h.in for this project) must reflect the project name in CMakeLists.txt, so @test0_VERSION_MAJOR@ for this project.
+
+Episode 5 Notes:
+- Using CMake lists for varying number of libraries; can turn adder library on for a total of 1 library or off for 0 libraries.
