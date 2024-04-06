@@ -18,8 +18,8 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
-include(CmakePrintHelpers)
-cmake_print_variables(PROJECT_BINARY_DIR PROJECT_SOURCE_DIR USE_ADDER)
+# include(CmakePrintHelpers)
+# cmake_print_variables(PROJECT_BINARY_DIR PROJECT_SOURCE_DIR CMAKE_INSTALL_PREFIX)
 
 # Download all the submodules
 find_package(Git QUIET)
@@ -57,3 +57,6 @@ target_link_directories(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME} glfw ${LIST_LINKS})
+
+install(TARGETS ${PROJECT_NAME})
+install(FILES "${PROJECT_BINARY_DIR}/test0_config.h" DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
