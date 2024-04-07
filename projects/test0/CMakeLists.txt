@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.27.2)
 
 project(test0 VERSION 1.0)
 
+find_library(glewlib glew NAMES glew2 glew32 GLEW GLEW2 DOC "glew library" REQUIRED)
+
 option(USE_ADDER "Library for adding two ints or floats." ON)
 if(USE_ADDER)
     add_subdirectory(adder)
@@ -56,7 +58,7 @@ target_link_directories(${PROJECT_NAME}
     ${LIST_LIB_DIRS}
 )
 
-target_link_libraries(${PROJECT_NAME} glfw ${LIST_LINKS})
+target_link_libraries(${PROJECT_NAME} glfw ${LIST_LINKS} ${glewlib})
 
 install(TARGETS ${PROJECT_NAME})
 install(FILES "${PROJECT_BINARY_DIR}/test0_config.h" DESTINATION "./include")

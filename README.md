@@ -33,3 +33,6 @@ Episode 6 Notes:
 Episode 7 Notes:
 - Prepending ${CMAKE_INSTALL_PREFIX} causes the built files to use an absolute path (source: https://cmake.org/cmake/help/latest/command/install.html -- under DESTINATION <dir> description)
 - Need NSIS to use CPack on Windows.
+
+Episode 8 Notes:
+- Downloaded GLEW binaries and put them in MinGW directories; able to find library using "glew32" in the NAMES parameter.
