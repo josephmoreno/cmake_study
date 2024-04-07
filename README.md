@@ -29,3 +29,7 @@ Episode 5 Notes:
 
 Episode 6 Notes:
 - Using CMAKE_INSTALL_PREFIX for installation paths.
+
+Episode 7 Notes:
+- Prepending ${CMAKE_INSTALL_PREFIX} causes the built files to use an absolute path (source: https://cmake.org/cmake/help/latest/command/install.html -- under DESTINATION <dir> description)
+- Need NSIS to use CPack on Windows.

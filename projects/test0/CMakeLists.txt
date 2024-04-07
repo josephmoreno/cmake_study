@@ -59,4 +59,10 @@ target_link_directories(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} glfw ${LIST_LINKS})
 
 install(TARGETS ${PROJECT_NAME})
-install(FILES "${PROJECT_BINARY_DIR}/test0_config.h" DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
+install(FILES "${PROJECT_BINARY_DIR}/test0_config.h" DESTINATION "./include")
+
+include(InstallRequiredSystemLibraries)
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set(CPACK_PACKAGE_VERSION_MAJOR "${test0_VERSION_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${test0_VERSION_MINOR}")
+include(CPack)
